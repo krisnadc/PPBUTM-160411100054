@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERHITUNGAN BODY MASS INDEX"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan BB : "
+        android:background="@color/colorPrimary"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="53dp"
+        />
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@id/textView1"
+        android:hint="dalam bentuk kg"
+        android:inputType="number"
+        android:text=""
+        android:textSize="15dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan TB : "
+        android:textColor="#000000"
+        android:background="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="53dp"
+        />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@id/textView3"
+        android:inputType="number"
+        android:hint="dalam bentuk cm"
+        android:text=""
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Edit2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:onClick="iya"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/hasilnya"
+        android:layout_below="@id/hitung"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="#000000"
+        />
+
+
+</LinearLayout>
